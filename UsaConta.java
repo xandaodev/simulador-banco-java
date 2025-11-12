@@ -1,15 +1,15 @@
 public class UsaConta {
     public static void main(String[]args){
         System.out.println("--- Iniciando Sistema de Banco ---");
-        Conta minhaConta = new Conta("2025-11");
+        Banco meuBanco = new Banco();
 
-        ContaInterface minhaInterface = new ContaInterface();
+        BancoInterface minhaInterfaceBanco = new BancoInterface(meuBanco);
 
-        minhaInterface.mostrarMenu(minhaConta);
+        minhaInterfaceBanco.iniciarMenuPrincipal();
+
 
         System.out.println("programa encerrado");
 
-        minhaInterface.fecharScanner();
     }
     
 }
