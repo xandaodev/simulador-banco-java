@@ -40,7 +40,7 @@ public class ContaInterface {
                     }
                     break;
                 case 3:
-                    System.out.println("Saldo atual = R$" + conta.conferirSaldo());
+                    System.out.println("\n" + "Saldo atual = R$" + conta.conferirSaldo());
                     break;
                 case 0:
                     System.out.println("Saindo do sistema");
